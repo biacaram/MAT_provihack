@@ -1,13 +1,13 @@
-<h1>Formulário de Cadastro de Empresa</h1>
+<h1>Formulário de Cadastro de Vaga</h1>
 
-<%= simple_form_for(@empresa) do |f| %>
+<%= simple_form_for(@vaga) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
   <br>
   <br>
-  <%= f.input :nome, :label => "Qual o nome da Empresa?" %>
+  <%= f.input :nome, :label => "Qual o nome da Vaga?" %>
   <br>
-  <%= f.input :descricao, :label => "O que vocês fazem?" %>
+  <%= f.input :skills, :label => "Quais as skills necessárias?" %>
   <br>
   <div class="btn-new">
   <%= f.button :submit, "Adicionar", class: "btn btn-outline-warning" %>
