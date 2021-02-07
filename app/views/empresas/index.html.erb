@@ -1,3 +1,6 @@
 <h1>Lista de Empresas</h1>
 
-<%= @empresas %>
+<% @empresas.each do |empresa| %>
+  <h2><%= empresa.nome %></h2>
+  <p><%= empresa.descricao %></p>
+<% end %>

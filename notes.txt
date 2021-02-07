@@ -1,5 +1,3 @@
-<h1>Vagas disponíveis</h1>
-
 <% @vagas.each do |vaga| %>
 <h4><%= vaga.nome %></h4>
 <h4><%= vaga.skills %></h4>
