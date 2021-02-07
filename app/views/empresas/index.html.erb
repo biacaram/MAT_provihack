@@ -3,4 +3,6 @@
 <% @empresas.each do |empresa| %>
   <h2><%= empresa.nome %></h2>
   <p><%= empresa.descricao %></p>
+  <%= link_to "Ver vagas", empresa_vagas_path(empresa), class: "btn btn-info" %>
 <% end %>
+

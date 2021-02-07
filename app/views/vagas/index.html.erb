@@ -2,5 +2,6 @@
 
 <% @vagas.each do |vaga| %>
 <h4><%= vaga.nome %></h4>
-<h4><%= vaga.skills %></h4>
+<p><%= vaga.skills %></p>
+<%= link_to "Ver candidatos", usuarios_path, class: "btn btn-info" %>
 <% end  %>

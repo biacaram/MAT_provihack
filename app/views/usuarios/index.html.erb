@@ -1,2 +1,6 @@
-<h1>Usuarios#index</h1>
-<p>Find me in app/views/usuarios/index.html.erb</p>
+<h1>Candidatos</h1>
+
+<% @usuarios.each do |usuario| %>
+<h4><%= usuario.nome %></h4>
+<a href="#"><%= usuario.email %></a>
+<% end  %>
