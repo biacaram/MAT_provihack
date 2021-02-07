@@ -11,9 +11,10 @@ kitkat = Empresa.create!(nome: 'KitKat', descricao: 'A gente ama contratar todos
 pera = Empresa.create!(nome: 'Pêra Phone', descricao: 'A empresa da pêra mordida')
 green = Empresa.create!(nome: 'GreenDevs', descricao: 'Devs com consciência ambiental')
 
-diego = Usuario.create!(nome: 'Diego', email: 'diego@junior.com', cargo: 'Dev Frontend')
-bia = Usuario.create!(nome: 'Bia', email: 'bia@junior.com', cargo: 'Dev Backend')
-nat = Usuario.create!(nome: 'Nat', email: 'nat@junior.com', cargo: 'Product Owner')
+debs = Usuario.create!(nome: 'Deborah Salles Vieira', email: 'debs@junior.com', cargo: 'Dev Frontend')
+bia = Usuario.create!(nome: 'Beatriz Monteiro Caram', email: 'bia@junior.com', cargo: 'Dev Backend')
+nat = Usuario.create!(nome: 'Nathalia Danilo', email: 'nat@junior.com', cargo: 'Product Owner')
+ana = Usuario.create!(nome: 'Ana Bruna Frias', email: 'anabru@junior.com', cargo: 'Dada Scientist')
 
 vaga = Vaga.create!(nome: 'Dev Frontend', skills: "CSS, HTML, JS", empresa_id: 1)
 vaga = Vaga.create!(nome: 'Dev Backend', skills: "Python, Ruby", empresa_id: 1)
