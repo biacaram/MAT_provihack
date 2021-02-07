@@ -1,7 +1,7 @@
 class VagasController < ApplicationController
 
   def index
-    @vagas = Vaga.all
+    @vagas = Vaga.where(empresa_id: params[:empresa_id])
   end
 
   def show
