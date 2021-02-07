@@ -1,0 +1,15 @@
+<%= simple_form_for @vaga do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+  <br>
+  <br>
+  <%= f.input :nome, :label => "Qual o nome da vaga?" %>
+  <br>
+  <%= f.input :skills, :label => "Quais as skills necessárias?" %>
+  <br>
+  <div class="btn-new">
+  <%= f.button :submit, "Adicionar", class: "btn btn-outline-warning" %>
+  </div>
+      
+<% end %>
+
