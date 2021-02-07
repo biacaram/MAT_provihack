@@ -1,7 +1,11 @@
 class VagasController < ApplicationController
 
   def index
-    @vagas = Vaga.where(empresa: @empresa)
+    @vagas = Vaga.all
+  end
+
+  def show
+    @vaga = Vaga.find(params[:id])
   end
 
   def new
