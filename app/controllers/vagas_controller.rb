@@ -21,9 +21,14 @@ class VagasController < ApplicationController
     else
       render :new
     end
-
   end
 
+  def destroy
+    @empresa = @vaga.empresa
+    @vaga.destroy
+    redirect_to @empresa
+  end
+  
   private 
 
     def vaga_params
