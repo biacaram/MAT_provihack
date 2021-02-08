@@ -1,6 +1,11 @@
-<h1><%= @empresa.nome %></h1>
+<div class="container">
 
-<h4>Descrição: <%= @empresa.descricao %></h4>
+  <h1><%= @empresa.nome %></h1>
 
-<%= link_to "Vagas disponíveis", empresa_vagas_path(@empresa), class: "btn btn-info" %>
+  <h4>Descrição: <%= @empresa.descricao %></h4>
 
+  <%= link_to "Vagas disponíveis", empresa_vagas_path(@empresa), class: "btn btn-info" %>
+  <br>
+  <%= link_to "Voltar", :back %>
+
+</div>

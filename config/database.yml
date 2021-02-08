@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: MAT_provihack_development
+  database: _MAT_v5_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: MAT_provihack
+  #username: _MAT_v5
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: MAT_provihack_test
+  database: _MAT_v5_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: MAT_provihack_production
-  username: MAT_provihack
-  password: <%= ENV['MAT_PROVIHACK_DATABASE_PASSWORD'] %>
+  database: _MAT_v5_production
+  username: _MAT_v5
+  password: <%= ENV['_MAT_V5_DATABASE_PASSWORD'] %>

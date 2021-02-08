@@ -1,7 +1,13 @@
-<h1>Vagas disponíveis</h1>
+<div class="container">
 
-<% @vagas.each do |vaga| %>
-<h4><%= vaga.nome %></h4>
-<p><%= vaga.skills %></p>
-<%= link_to "Ver candidatos", usuarios_path, class: "btn btn-info" %>
-<% end  %>
+  <h3>Vagas disponíveis</h3>
+  <hr>
+  <% @vagas.each do |vaga| %>
+  <h4><%= vaga.nome %></h4>
+  <p><%= vaga.skills %></p>
+  <%= link_to "Ver candidatos", usuarios_path, class: "btn btn-info" %>
+  <% end  %>
+  <br>
+  <%= link_to "Voltar", :back %>
+
+</div>

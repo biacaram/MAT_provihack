@@ -1,8 +1,17 @@
-<h1>Lista de Empresas</h1>
+<div class="container">
+    <h3 class="titulo">Lista de Empresas</h3>
+    <hr>
+    <% @empresas.each do |empresa| %>
+  <div class="card-product">
+  <img src="https://image.flaticon.com/icons/png/512/43/43500.png" />
+    <div class="card-product-infos">
+      <div>
+        <h2><%= empresa.nome %></h2>
+        <p><%= empresa.descricao %></p>
+      </div>
+    </div>
+      <%= link_to "Ver vagas", empresa_vagas_path(empresa), class: "btn btn-info" %>
+  </div>
+    <% end %>
 
-<% @empresas.each do |empresa| %>
-  <h2><%= empresa.nome %></h2>
-  <p><%= empresa.descricao %></p>
-  <%= link_to "Ver vagas", empresa_vagas_path(empresa), class: "btn btn-info" %>
-<% end %>
-
+</div>

@@ -1,3 +1,12 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.voltar {
+  color: #272323e3;
+
+  &:hover {
+    text-decoration: none;
+    color: #663e72e3;
+  }
+}

@@ -1,6 +1,13 @@
-<h1>Candidatos</h1>
+<div class="container">
 
-<% @usuarios.each do |usuario| %>
-<h4><%= usuario.nome %></h4>
-<a href="#"><%= usuario.email %></a>
-<% end  %>
+  <h3>Candidatos encontrados</h3>
+  <hr>
+  <% @usuarios.each do |usuario| %>
+  <h4><%= usuario.nome %></h4>
+  <p>Desenvolvedor Java</p>
+  <a href="#"><%= usuario.email %></a>
+  <% end  %>
+  <br>
+  <%= link_to "Voltar", :back %>
+
+</div>

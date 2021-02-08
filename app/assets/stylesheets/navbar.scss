@@ -1,0 +1,18 @@
+.navbar {
+  background-image: linear-gradient(to bottom, #7B61FF, #3798FF) !important;
+  padding: 30px !important;
+}
+
+.navbar-brand {
+	font-size: 16px;
+	letter-spacing: 3px;
+}
+
+.login-btn {
+  color: #0A1027;
+
+  &:hover {
+    color: #363d5a;
+    text-decoration: none;
+  }
+}
