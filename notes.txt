@@ -1,4 +1,0 @@
-<% @vagas.each do |vaga| %>
-<h4><%= vaga.nome %></h4>
-<h4><%= vaga.skills %></h4>
-<% end  %>

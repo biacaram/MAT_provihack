@@ -1,0 +1,28 @@
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1352&q=80');
+  width: 100vw;
+  height: 100vh;
+  padding: 150px;
+  display: flex;
+  margin: 0px !important;
+  background-size: cover;
+}
+
+
+.banner h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #272323e3;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+.banner h2 {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: lighter;
+  color: #272323e3;
+  opacity: 0.8;
+  width: fit-content;
+  border-radius: 1px;
+  padding: 10px 0px;
+}
